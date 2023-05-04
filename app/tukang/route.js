@@ -4,7 +4,7 @@ const { handlerGetAllTukang, handlerPutStatusOrderByTukang, handlerGetAllOrderTu
 const router = Express.Router();
 
 
-router.get("/", authenticationToken, handlerGetAllTukang);
+router.get("/", handlerGetAllTukang);
 router.get("/order", authenticationToken, handlerGetAllOrderTukang);
 router.get("/order/:id", authenticationToken, handlerGetOrderTukangById);
 router.put("/order/:id", authenticationToken, handlerPutStatusOrderByTukang)
