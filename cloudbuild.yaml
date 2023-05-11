@@ -1,7 +1,7 @@
 steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'gcr.io/focal-pathway-385616/my-app', '.' ]
+    args: [ 'build', '-t', 'gcr.io/cloud-run-rifqy/my-app', '.' ]
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'push', 'gcr.io/focal-pathway-385616/my-app' ]
+    args: [ 'push', 'gcr.io/cloud-run-rifqy/my-app' ]
